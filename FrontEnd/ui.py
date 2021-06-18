@@ -25,6 +25,7 @@ def SnifferMode():
 	res = Label(top , text="Please Check command prompt for output")
 	t2 = Label(top , text="")
 	t2.pack()
+	top.resizable(False,False)
 	res.pack()
 	#Sniffer Mode function from here
 
@@ -44,6 +45,7 @@ def LoggerMode():
 	res = Label(top , text="Please Check comand prompt for output")
 	t2 = Label(top , text="")
 	t2.pack()
+	top.resizable(False,False)
 	res.pack()
 	#Logger Mode function from here
 
@@ -68,6 +70,7 @@ def NIDS():
 	t2.pack()
 	button.pack()
 	t3.pack()
+	top.resizable(False,False)
 	res.pack()
 
 def Honeypot():
@@ -86,6 +89,7 @@ def Honeypot():
 	res = Label(top , text="Please Check command prompt for output")
 	t2 = Label(top , text="")
 	t2.pack()
+	top.resizable(False,False)
 	res.pack()
 	#Honepot function from here
 
@@ -105,6 +109,7 @@ def PortScan():
 	res = Label(top , text="Please Check command prompt for output")
 	t2 = Label(top , text="")
 	t2.pack()
+	top.resizable(False,False)
 	res.pack()
 	#PortScan fucntion from here
 
@@ -124,12 +129,11 @@ def FireWall():
 	res = Label(top , text="Please Check command prompt for output")
 	t2 = Label(top , text="")
 	t2.pack()
+	top.resizable(False,False)
 	res.pack()
 	#Firewall fucniton from here
 
-
 root = Tk()
-
 mylabel=Label(root, text="")
 mylabel1=Label(root, text="Anomaly Based Intrustion Detection System" , font=('Helvetica', 15, 'bold'))
 mylabel2=Label(root, text="")
@@ -170,7 +174,7 @@ myButton6.pack()
 mylabel8.pack()
 myButton7.pack()
 
-
+root.resizable(False,False)
 root.geometry("500x550+100+50")
 root.title("Anomaly Based Intrustion Detection System")
 root.mainloop()
