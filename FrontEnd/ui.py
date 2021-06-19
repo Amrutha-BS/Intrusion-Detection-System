@@ -1,7 +1,6 @@
 from tkinter import *
 from tkinter import messagebox
 from tkinter import filedialog
-import os
 from PIL import ImageTk,Image
 from model import Intrusion_Detection
 from Sniffer import packet_sniffer
@@ -25,7 +24,7 @@ def SnifferMode():
 	img1 = Label (top,image=my_img)
 	img1.pack()
 	top.title('Sniffer Mode')
-	top.geometry("500x500+450+100")
+	top.geometry("500x550+500+110")
 
 	t1 = Label(top , text="")
 	t1.pack()
@@ -46,7 +45,7 @@ def LoggerMode():
 	img1 = Label (top,image=my_img)
 	img1.pack()
 	top.title('Logger Mode')
-	top.geometry("500x500+450+100")
+	top.geometry("500x550+500+110")
 
 	t1 = Label(top , text="")
 	t1.pack()
@@ -66,7 +65,7 @@ def NIDS():
 	img1 = Label (top,image=my_img)
 	img1.pack()
 	top.title('IDS')
-	top.geometry("500x500+450+100")
+	top.geometry("500x550+500+110")
 
 	t = Label(top , text="Please open the file which contains the attacks")
 	button = Button(top, text="Open file",command=OpenFile)
@@ -88,7 +87,7 @@ def Honeypot():
 	img1 = Label (top,image=my_img)
 	img1.pack()
 	top.title('Honeypot')
-	top.geometry("500x500+450+100")
+	top.geometry("500x550+500+110")
 
 	t1 = Label(top , text="")
 	t1.pack()
@@ -107,7 +106,7 @@ def PortScan():
 	img1 = Label (top,image=my_img)
 	img1.pack()
 	top.title('Port Scan')
-	top.geometry("500x500+450+100")
+	top.geometry("500x550+500+110")
 
 	t1 = Label(top , text="")
 	t1.pack()
@@ -126,7 +125,7 @@ def FireWall():
 	img1 = Label (top,image=my_img)
 	img1.pack()
 	top.title('FireWall')
-	top.geometry("500x500+450+100")
+	top.geometry("500x550+500+110")
 
 	t1 = Label(top , text="")
 	t1.pack()
@@ -180,7 +179,7 @@ def Home():
 	mylabel8.pack()
 	myButton7.pack()
 	top.resizable(False,False)
-	top.geometry("500x550+450+100")
+	top.geometry("500x550+500+110")
 	top.title("Anomaly Based Intrustion Detection System")
 
 
