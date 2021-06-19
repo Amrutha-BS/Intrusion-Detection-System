@@ -2,9 +2,9 @@ from tkinter import *
 from tkinter import messagebox
 from tkinter import filedialog
 from PIL import ImageTk,Image
-from model import Intrusion_Detection
-from Sniffer import packet_sniffer
-from Logger import packet_logger
+#from model import Intrusion_Detection
+#from Sniffer import packet_sniffer
+#from Logger import packet_logger
 
 def delete():
 	root.destroy()
@@ -178,7 +178,7 @@ def Home():
 	myButton6.pack()
 	mylabel8.pack()
 	myButton7.pack()
-	top.resizable(False,False)
+	#top.resizable(False,False)
 	top.geometry("500x550+500+110")
 	top.title("Anomaly Based Intrustion Detection System")
 
