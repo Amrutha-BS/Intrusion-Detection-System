@@ -125,6 +125,27 @@ def PortScan():
 	res.pack()
 	done=port_scanner()
 
+def LogsManagement():
+	global my_img1
+	top=Toplevel()
+	my_img1 = ImageTk.PhotoImage(Image.open("pes.png"))
+	img1 = Label (top,image=my_img)
+	img1.pack()
+	top.title('Logs Management')
+	top.iconbitmap('pes.ico')
+	top.geometry("500x550+500+110")
+
+	t1 = Label(top , text="")
+	t1.pack()
+	text = Label(top, text="Logs Management being processed") 
+	text.pack()
+	res = Label(top , text="Please Check command prompt for output")
+	t2 = Label(top , text="")
+	t2.pack()
+	res.pack()
+	#Logs Management fucniton from here
+
+
 def FireWall():
 	global my_img1
 	top=Toplevel()
@@ -156,6 +177,7 @@ def Home():
 	mylabel6=Label(top, text="")
 	mylabel7=Label(top, text="")
 	mylabel8=Label(top, text="")
+	mylabel9=Label(top, text="")
 
 	global my_img
 	my_img = ImageTk.PhotoImage(Image.open("pes.png"))
@@ -170,8 +192,9 @@ def Home():
 	myButton3 = Button(top , text="NIDS" , padx=63 , command=NIDS , fg="blue")
 	myButton4 = Button(top , text="Honeypot" , padx=50 , command=Honeypot , fg="blue")
 	myButton5 = Button(top , text="Port Scan" , padx=52 , command=PortScan , fg="blue")
-	myButton6 = Button(top , text="Fire Wall" , padx=55 , command=FireWall , fg="blue")
-	myButton7 = Button(top , text="Exit" , padx=70 , command=root.quit , fg="blue")
+	myButton6 = Button(top , text="Logs Management" , padx=29 , command=LogsManagement , fg="blue")
+	myButton7 = Button(top , text="Fire Wall" , padx=55 , command=FireWall , fg="blue")
+	myButton8 = Button(top , text="Exit" , padx=68 , command=root.quit , fg="blue")
 
 	myButton1.pack()
 	mylabel3.pack()
@@ -186,8 +209,10 @@ def Home():
 	myButton6.pack()
 	mylabel8.pack()
 	myButton7.pack()
+	mylabel9.pack()
+	myButton8.pack()
 	#top.resizable(False,False)
-	top.geometry("500x550+500+110")
+	top.geometry("500x600+500+110")
 	top.iconbitmap('pes.ico')
 	top.title("Anomaly Based Intrustion Detection System")
 
