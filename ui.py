@@ -7,7 +7,7 @@ from Sniffer import packet_sniffer
 from Logger import packet_logger
 from PortScanner import port_scanner
 from HoneyPot import honey_pot
-from logs_manager import logs_management
+from Logger import packet_logger
 from PS import port_scan
 
 def delete():
@@ -181,6 +181,7 @@ def Home():
 	mylabel7=Label(top, text="")
 	mylabel8=Label(top, text="")
 	mylabel9=Label(top, text="")
+	mylabel10=Label(top, text="")
 
 	global my_img
 	my_img = ImageTk.PhotoImage(Image.open("pes.png"))
@@ -189,6 +190,10 @@ def Home():
 	mylabel.pack()
 	mylabel1.pack()
 	mylabel2.pack()
+	mylabel10.pack()
+
+	Frame1 = Frame(top , bg='#80c1ff')
+	Frame1.place(x=150 , y=220 , height=390 , width=200)
 
 	myButton1 = Button(top , text="Sniffer Mode" , padx=41 , command=SnifferMode , fg="blue")
 	myButton2 = Button(top , text="Logger Mode" , padx=41 , command=LoggerMode , fg="blue")
