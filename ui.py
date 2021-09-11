@@ -7,7 +7,7 @@ from Sniffer import packet_sniffer
 from Logger import packet_logger
 from PortScanner import port_scanner
 from HoneyPot import honey_pot
-from Logger import packet_logger
+from logs_manager import logs_management
 from PS import port_scan
 
 def delete():
