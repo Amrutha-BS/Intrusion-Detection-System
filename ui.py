@@ -74,8 +74,8 @@ def NIDS():
 	top.iconbitmap('pes.ico')
 	top.geometry("500x550+500+110")
 
-	t = Label(top , text="Please open the file which contains the attacks")
-	button = Button(top, text="Open file",command=OpenFile)
+	t = Label(top , text="Please open the file which contains the network traffic")
+	button = Button(top, text="Open file",command=OpenFile, fg="white" , bg="#d77337")
 	t1 = Label(top , text="")
 	t2 = Label(top , text="")
 	t3 = Label(top , text="")
@@ -193,16 +193,17 @@ def Home():
 	mylabel10.pack()
 
 	Frame1 = Frame(top , bg='#80c1ff')
-	Frame1.place(x=150 , y=220 , height=390 , width=200)
+	Frame1.place(x=150 , y=220 , height=490 , width=250)
 
-	myButton1 = Button(top , text="Sniffer Mode" , padx=41 , command=SnifferMode , fg="blue")
-	myButton2 = Button(top , text="Logger Mode" , padx=41 , command=LoggerMode , fg="blue")
-	myButton3 = Button(top , text="NIDS" , padx=63 , command=NIDS , fg="blue")
-	myButton4 = Button(top , text="Honeypot" , padx=50 , command=Honeypot , fg="blue")
-	myButton5 = Button(top , text="Port Scan" , padx=52 , command=PortScan , fg="blue")
-	myButton6 = Button(top , text="Logs Management" , padx=29 , command=LogsManagement , fg="blue")
-	myButton7 = Button(top , text="Fire Wall" , padx=55 , command=FireWall , fg="blue")
-	myButton8 = Button(top , text="Exit" , padx=68 , command=root.quit , fg="blue")
+	myButton1 = Button(top , text="Sniffer Mode" , fg="white" , bg="#d77337" , font=("times new roman",15) , padx=41 , command=SnifferMode)
+	myButton2 = Button(top , text="Logger Mode" ,  fg="white" , bg="#d77337" , font=("times new roman",15) , padx=41 , command=LoggerMode)
+	myButton3 = Button(top , text="NIDS" ,  fg="white" , bg="#d77337", font=("times new roman",15) , padx=73 , command=NIDS)
+	myButton4 = Button(top , text="Honeypot" ,  fg="white" , bg="#d77337", font=("times new roman",15) , padx=57 , command=Honeypot)
+	myButton5 = Button(top , text="Port Scan" ,  fg="white" , bg="#d77337", font=("times new roman",15) , padx=57 , command=PortScan)
+	myButton6 = Button(top , text="Logs Management" ,  fg="white" , bg="#d77337", font=("times new roman",15) ,padx=25 , command=LogsManagement)
+	myButton7 = Button(top , text="Fire Wall" ,  fg="white" , bg="#d77337", font=("times new roman",15) , padx=57 , command=FireWall)
+	myButton8 = Button(top , text="Exit" ,  fg="white" , bg="#d77337", font=("times new roman",15) , padx=77 , command=root.quit )
+
 
 	myButton1.pack()
 	mylabel3.pack()
@@ -219,8 +220,8 @@ def Home():
 	myButton7.pack()
 	mylabel9.pack()
 	myButton8.pack()
-	#top.resizable(False,False)
-	top.geometry("500x600+500+110")
+	top.resizable(False,False)
+	top.geometry("550x750+500+70")
 	top.iconbitmap('pes.ico')
 	top.title("Anomaly Based Intrustion Detection System")
 
